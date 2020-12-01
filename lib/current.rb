@@ -5,7 +5,6 @@ module Current
 
   def account=(account)
     super
-    Time.zone = account.timezone
   end
 
   def self.reset
