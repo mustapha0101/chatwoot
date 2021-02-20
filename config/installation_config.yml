@@ -25,7 +25,7 @@
   value:
   locked: false
 - name: CREATE_NEW_ACCOUNT_FROM_DASHBOARD
-  value: false
+  value: true
   locked: false
 - name: INSTALLATION_EVENTS_WEBHOOK_URL
   value:
