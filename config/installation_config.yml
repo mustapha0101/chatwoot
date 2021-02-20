@@ -3,9 +3,9 @@
 - name: INSTALLATION_NAME
   value: 'IntelliWork'
 - name: LOGO_THUMBNAIL
-  value: '/brand-assets/logo_thumbnail.svg'
+  value: 'https://www.intelliwork.ca/brand-assets/logo_thumbnail.png'
 - name: LOGO
-  value: '/brand-assets/logo.svg'
+  value: 'https://www.intelliwork.ca/brand-assets/logo.png'
 - name: BRAND_URL
   value: 'https://www.intelliwork.ca'
 - name: WIDGET_BRAND_URL
