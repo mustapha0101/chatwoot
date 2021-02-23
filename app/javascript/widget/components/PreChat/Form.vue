@@ -125,7 +125,14 @@ export default {
        const { locale } = window.chatwootWebChannel;
        var tmpMessage; 
        if(!this.message){
-         tmpMessage = locale;
+         if(locale === "en"){
+
+          tmpMessage = "Hello";
+         }else {
+
+          tmpMessage = "Bonjour";
+         }
+         
        }else {
          tmpMessage= this.message;
 
