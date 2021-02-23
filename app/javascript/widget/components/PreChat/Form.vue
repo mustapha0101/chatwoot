@@ -84,8 +84,8 @@ export default {
 
     const messageValidation = {
       message: {
-        required,
-        minLength: minLength(10),
+       // required,
+        minLength: minLength(1),
       },
     };
     if (this.options.requireEmail) {
@@ -121,7 +121,7 @@ export default {
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message: this.message,
+        message: (this.message)? this.message:"Bonjour",
       });
     },
   },
