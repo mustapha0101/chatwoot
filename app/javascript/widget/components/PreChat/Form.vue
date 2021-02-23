@@ -127,10 +127,10 @@ export default {
        if(!this.message){
          if(locale === "en"){
 
-          tmpMessage = "Hello";
+          tmpMessage = locale;
          }else {
 
-          tmpMessage = "Bonjour";
+          tmpMessage = locale;
          }
          
        }else {
