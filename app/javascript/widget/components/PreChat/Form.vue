@@ -123,8 +123,8 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-       const { locale } = IFrameHelper.getLocale();
-       var tmpMessage; 
+      // const { locale } = IFrameHelper.getLocale();
+    /*   var tmpMessage; 
        if(!this.message){
          if(locale === "en"){
 
@@ -137,11 +137,11 @@ export default {
        }else {
          tmpMessage= this.message;
 
-       }
+       }*/
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message:tmpMessage,
+        message:this.message,
       });
     },
   },
