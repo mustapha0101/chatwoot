@@ -122,7 +122,7 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-       const { locale } = this.$root.$i18n.locale;
+       const { locale } = window.$chatwoot.locale;
        var tmpMessage; 
        if(!this.message){
          if(locale === "en"){
