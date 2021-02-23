@@ -142,6 +142,7 @@ export default {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
         message:this.message,
+        private:true,
       });
     },
   },
