@@ -58,6 +58,7 @@ import Spinner from 'shared/components/Spinner';
 import { mapGetters } from 'vuex';
 import { getContrastingTextColor } from 'shared/helpers/ColorHelper';
 import { required, minLength, email } from 'vuelidate/lib/validators';
+import { IFrameHelper } from '../../../sdk/IFrameHelper';
 export default {
   components: {
     FormInput,
@@ -122,7 +123,7 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-       const { locale } = window.$chatwoot.locale;
+       const { locale } = IFrameHelper.getLocale();
        var tmpMessage; 
        if(!this.message){
          if(locale === "en"){

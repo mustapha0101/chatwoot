@@ -122,7 +122,10 @@ export const IFrameHelper = {
       }
       setBubbleText(window.$chatwoot.launcherTitle || message.label);
     },
+    getLocale(){
+      return window.$chatwoot.locale;
 
+    },
     toggleBubble: () => {
       onBubbleClick();
     },
