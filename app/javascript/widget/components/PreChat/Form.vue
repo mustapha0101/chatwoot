@@ -71,6 +71,10 @@ export default {
       default: () => ({}),
     },
   },
+   mounted() {
+    const { locale } = window.chatwootWebChannel;
+   
+  },
   validations() {
     const identityValidations = {
       fullName: {
@@ -118,10 +122,18 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
+       const { locale } = window.chatwootWebChannel;
+       var tmpMessage; 
+       if(!this.message){
+         tmpMessage = locale;
+       }else {
+         tmpMessage= this.message;
+
+       }
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message: (this.message)? this.message:"Bonjour",
+        message:tmpMessage,
       });
     },
   },
