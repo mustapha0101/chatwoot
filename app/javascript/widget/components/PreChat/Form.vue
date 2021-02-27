@@ -31,6 +31,7 @@
       "
     />
     <form-text-area
+      v-if="options.requireEmail"
       v-model="message"
       class="my-5"
       :label="$t('PRE_CHAT_FORM.FIELDS.MESSAGE.LABEL')"
@@ -72,9 +73,8 @@ export default {
       default: () => ({}),
     },
   },
-   mounted() {
+  mounted() {
     const { locale } = window.chatwootWebChannel;
-   
   },
   validations() {
     const identityValidations = {
@@ -89,7 +89,7 @@ export default {
 
     const messageValidation = {
       message: {
-       // required,
+        // required,
         minLength: minLength(1),
       },
     };
@@ -123,25 +123,15 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-      // const { locale } = IFrameHelper.getLocale();
-      var tmpMessage; 
-       if(!this.message){
-         if(locale === "en"){
-
-          tmpMessage = this.$t('WELCOME_CONVERSATION') ;
-         }else {
-
-          tmpMessage = this.$t('WELCOME_CONVERSATION');
-         }
-         
-       }else {
-         tmpMessage= this.$t('WELCOME_CONVERSATION');
-
-       }
+      const { locale } = IFrameHelper.getLocale();
+      var tmpMessage;
+      if (!this.message) {
+        tmpMessage = this.$t('WELCOME_CONVERSATION');
+      }
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message:tmpMessage
+        message: tmpMessage,
       });
     },
   },
