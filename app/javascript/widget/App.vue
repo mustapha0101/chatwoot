@@ -175,12 +175,6 @@ export default {
         } else if (message.event === 'unset-unread-view') {
           this.showUnreadView = false;
         }
-        else if (message.event === 'set-intro') {
-          this.$store.dispatch(
-            'conversation/sendMessage',
-            message.msg
-          );
-        }
       });
     },
     sendLoadedEvent() {
