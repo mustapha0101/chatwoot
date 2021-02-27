@@ -124,25 +124,24 @@ export default {
         return;
       }
       // const { locale } = IFrameHelper.getLocale();
-    /*   var tmpMessage; 
+      var tmpMessage; 
        if(!this.message){
          if(locale === "en"){
 
-          tmpMessage = locale;
+          tmpMessage = this.$t('WELCOME_CONVERSATION') ;
          }else {
 
-          tmpMessage = locale;
+          tmpMessage = this.$t('WELCOME_CONVERSATION');
          }
          
        }else {
-         tmpMessage= this.message;
+         tmpMessage= this.$t('WELCOME_CONVERSATION');
 
-       }*/
+       }
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message:this.message,
-        private:true,
+        message:tmpMessage
       });
     },
   },

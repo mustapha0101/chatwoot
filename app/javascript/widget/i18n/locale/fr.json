@@ -18,6 +18,26 @@
     "IN_A_DAY": "Répond généralement dans la journée"
   },
   "START_CONVERSATION": "Démarrer la conversation",
+  "WELCOME_CONVERSATION":"Bonjour",
+  "PRE_CHAT_FORM": {
+    "FIELDS": {
+      "FULL_NAME": {
+        "LABEL": "Nom Complet",
+        "PLACEHOLDER": "Veuillez entrer votre nom",
+        "ERROR": "Le nom est obligatoire"
+      },
+      "EMAIL_ADDRESS": {
+        "LABEL": "Adresse courriel",
+        "PLACEHOLDER": "Veuillez saisir votre adresse courriel",
+        "ERROR": "Courriel invalide"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "PLACEHOLDER": "Veuillez entrer votre message",
+        "ERROR": "Message trop court"
+      }
+    }
+  },
   "UNREAD_VIEW": {
     "VIEW_MESSAGES_BUTTON": "Voir les nouveaux messages",
     "CLOSE_MESSAGES_BUTTON": "Fermer"
@@ -30,4 +50,5 @@
   "CHAT_PLACEHOLDER": "Tapez votre message",
   "TODAY": "Aujourd'hui",
   "YESTERDAY": "Hier"
+  
 }
