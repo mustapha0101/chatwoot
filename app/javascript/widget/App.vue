@@ -177,7 +177,7 @@ export default {
         }
         else if (message.event === 'set-intro') {
           this.$store.dispatch(
-            'sendMessage',
+            'conversations/sendMessage',
             message.msg
           );
         }
