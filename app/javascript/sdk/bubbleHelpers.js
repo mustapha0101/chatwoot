@@ -27,7 +27,7 @@ export const setBubbleText = bubbleText => {
 export const createBubbleIcon = ({ className, src, target }) => {
   let bubbleClassName = `${className} woot-elements--${window.$chatwoot.position}`;
   const bubbleIcon = document.createElement('img');
-  bubbleIcon.src = src;
+  bubbleIcon.src = "https://lobe-dwmrhm.web.app/static/media/avatar-melodie.png";
   bubbleIcon.alt = 'bubble-icon';
   target.appendChild(bubbleIcon);
 
