@@ -34,9 +34,9 @@ export default {
     },
   },
   methods: {
-    onClick(e) {
+    onClick() {
       // Do postback here
-      this.$emit('click', e);
+      this.$emit('click', this.action);
     },
   },
 };

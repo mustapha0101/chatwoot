@@ -79,6 +79,12 @@ const runSDK = ({ baseUrl, websiteToken }) => {
       }
     },
 
+    setIntro(msg = '') {
+    
+        IFrameHelper.sendMessage('set-intro', {msg:msg});
+   
+    },
+
     deleteCustomAttribute(customAttribute = '') {
       if (!customAttribute) {
         throw new Error('Custom attribute is required');

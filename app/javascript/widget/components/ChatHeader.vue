@@ -79,6 +79,7 @@ export default {
   .header-branding {
     display: flex;
     align-items: center;
+    
 
     img {
       border-radius: 50%;
