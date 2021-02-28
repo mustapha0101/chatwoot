@@ -123,7 +123,7 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-      const { locale } = IFrameHelper.getLocale();
+     
       var tmpMessage;
       if (!this.message) {
         tmpMessage = this.$t('WELCOME_CONVERSATION');
