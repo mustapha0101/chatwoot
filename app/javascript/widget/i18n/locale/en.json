@@ -13,7 +13,7 @@
     "OFFLINE": "We are offline"
   },
   "REPLY_TIME": {
-    "IN_A_FEW_MINUTES": "Typically replies in a few minutes",
+    "IN_A_FEW_MINUTES": "Typically replies in a few seconds",
     "IN_A_FEW_HOURS": "Typically replies in a few hours",
     "IN_A_DAY": "Typically replies in a day"
   },
