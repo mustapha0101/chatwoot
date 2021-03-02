@@ -39,7 +39,7 @@
       :error="$v.message.$error ? $t('PRE_CHAT_FORM.FIELDS.MESSAGE.ERROR') : ''"
     /-->
     <woot-button
-      class="font-medium"
+      class="font-medium mt-5"
       block
       :bg-color="widgetColor"
       :text-color="textColor"
