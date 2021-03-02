@@ -30,14 +30,14 @@
           : ''
       "
     />
-    <form-text-area
+    <!--form-text-area
       v-if="options.requireEmail"
       v-model="message"
       class="my-5"
       :label="$t('PRE_CHAT_FORM.FIELDS.MESSAGE.LABEL')"
       :placeholder="$t('PRE_CHAT_FORM.FIELDS.MESSAGE.PLACEHOLDER')"
       :error="$v.message.$error ? $t('PRE_CHAT_FORM.FIELDS.MESSAGE.ERROR') : ''"
-    />
+    /-->
     <woot-button
       class="font-medium"
       block
@@ -131,7 +131,7 @@ export default {
       this.$store.dispatch('conversation/createConversation', {
         fullName: this.fullName,
         emailAddress: this.emailAddress,
-        message: tmpMessage,
+        message: this.$t('WELCOME_CONVERSATION'),
       });
     },
   },
