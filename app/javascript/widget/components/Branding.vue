@@ -8,7 +8,7 @@
     >
       <img :alt="globalConfig.brandName" :src="globalConfig.logoThumbnail" />
       <span>
-        {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
+     
       </span>
     </a>
   </div>
