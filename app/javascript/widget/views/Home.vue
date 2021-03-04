@@ -65,7 +65,7 @@
           @start-conversation="startConversation"
         />
       </transition>
-      <branding></branding>
+ 
     </div>
   </div>
 </template>
